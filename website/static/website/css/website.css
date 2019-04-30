@@ -1,0 +1,26 @@
+/*
+ * Copyright (c) 2019. Marcio Pinheiro. This Item is protected by copyright
+ * and/or related rights. You are free to use this Item in any way that is
+ * permitted by the copyright and related rights legislation that applies to
+ * your use. For other uses you need to obtain permission from the
+ * rights-holder(s).
+ */
+
+#website-privacy-policy {
+    padding: 0 20px 20px 20px;
+    line-height: 1.5em;
+    text-align: justify;
+
+}
+
+#website-privacy-policy h1,
+#website-privacy-policy h2,
+#website-privacy-policy h3,
+#website-privacy-policy h4 {
+    margin-top: 30px;
+}
+
+#website-contact {
+    width: 100%;
+    padding-bottom: 100px;
+}

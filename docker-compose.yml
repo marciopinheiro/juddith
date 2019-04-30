@@ -1,0 +1,25 @@
+version: "3.7"
+
+services:
+
+  postgres:
+    container_name: juddith_postgres
+    image: postgres:9.4
+    ports:
+      - 5432:5432
+    volumes:
+      - ./docker/data/postgres:/var/lib/postgresql/data
+    networks:
+      - backend
+
+  redis:
+    container_name: juddith_redis
+    image: redis:alpine
+    ports:
+      - 6379:6379
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge

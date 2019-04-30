@@ -1,0 +1,23 @@
+{% extends 'application/application.html' %}
+{% load static %}
+
+{% block app_content %}
+    <div id="application-trained">
+        <div class="jumbotron">
+            <h1 class="display-4">Olá!</h1>
+            <p class="lead">O modelo acabou de ser treinado.</p>
+            <hr class="my-4">
+            <p>Todos os registros disponíveis foram utilizados e uma cópia do
+                modelo foi salvo no S3 junto com a planilha de treino e um
+                gráfico de acuracidade. Tenha um bom dia!</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg"
+                   href="{% url 'application:chat' %}"
+                   role="button">Vamos conversar</a>
+            </p>
+        </div>
+    </div>
+{% endblock %}
+
+{% block app_view_assets %}
+{% endblock %}

@@ -1,0 +1,541 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-29 23:07-0300\n"
+"PO-Revision-Date: 2019-04-29 23:07-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.2.1\n"
+
+#: application/addons.py:107
+msgid "monday"
+msgstr "segunda-feira"
+
+#: application/addons.py:107
+msgid "tuesday"
+msgstr "terça-feira"
+
+#: application/addons.py:107
+msgid "wednesday"
+msgstr "quarta-feira"
+
+#: application/addons.py:108
+msgid "thursday"
+msgstr "quinta-feira"
+
+#: application/addons.py:108
+msgid "friday"
+msgstr "sexta-feira"
+
+#: application/addons.py:108
+msgid "saturday"
+msgstr "sábado"
+
+#: application/addons.py:109
+msgid "sunday"
+msgstr "domingo"
+
+#: application/admin.py:51 application/models.py:50 application/models.py:73
+msgid "response"
+msgstr "resposta"
+
+#: application/admin.py:54 application/models.py:47 application/models.py:130
+msgid "feature"
+msgstr "recurso"
+
+#: application/admin.py:99 application/models.py:40
+msgid "intent"
+msgstr "intenção"
+
+#: application/apps.py:7
+msgid "Application"
+msgstr "Aplicação"
+
+#: application/models.py:41
+msgid "intentions"
+msgstr "intenções"
+
+#: application/models.py:43 application/models.py:76 application/models.py:133
+msgid "name"
+msgstr "nome"
+
+#: application/models.py:44 application/models.py:77 application/models.py:134
+msgid "description"
+msgstr "descrição"
+
+#: application/models.py:45
+msgid "tag"
+msgstr "tag"
+
+#: application/models.py:59 application/models.py:86 application/models.py:116
+#: application/models.py:146
+msgid "created by"
+msgstr "criado por"
+
+#: application/models.py:63 application/models.py:90 application/models.py:120
+#: application/models.py:150
+msgid "last modified by"
+msgstr "última modificação por"
+
+#: application/models.py:64 application/models.py:91 application/models.py:121
+#: application/models.py:151
+msgid "created at"
+msgstr "criado em"
+
+#: application/models.py:65 application/models.py:92 application/models.py:122
+#: application/models.py:152
+msgid "updated at"
+msgstr "atualizado em"
+
+#: application/models.py:74
+msgid "responses"
+msgstr "respostas"
+
+#: application/models.py:104
+msgid "elocution"
+msgstr "elocução"
+
+#: application/models.py:105
+msgid "elocutions"
+msgstr "elocuções"
+
+#: application/models.py:109
+msgid "text"
+msgstr "texto"
+
+#: application/models.py:131
+msgid "features"
+msgstr "recursos"
+
+#: application/models.py:135
+msgid "call"
+msgstr "chamada"
+
+#: application/models.py:136
+msgid "error message"
+msgstr "mensagem de erro"
+
+#: application/models.py:138
+msgid "empty message"
+msgstr "mensagem para valores vazios"
+
+#: juddith/admin.py:16
+#, python-brace-format
+msgid "{message_bit} successfully enabled."
+msgstr ""
+
+#: juddith/admin.py:19
+msgid "Activate selected registers"
+msgstr "Ativar registros selecionados"
+
+#: juddith/admin.py:30
+#, python-brace-format
+msgid "{message_bit} successfully disabled."
+msgstr ""
+
+#: juddith/admin.py:33
+msgid "Deactivate selected registers"
+msgstr "Desativar registros selecionados"
+
+#: juddith/admin.py:52
+#, python-brace-format
+msgid "{message_bit} successfully duplicated."
+msgstr ""
+
+#: juddith/admin.py:54
+msgid "Some of the records could not be duplicated because one or more "
+msgstr ""
+
+#: juddith/admin.py:58
+msgid "Duplicate selected registers"
+msgstr "Duplicar registros selecionados"
+
+#: juddith/settings.py:144 juddith/settings_local.py:150
+msgid "Portuguese"
+msgstr "Português"
+
+#: juddith/settings.py:145 juddith/settings_local.py:151
+msgid "English"
+msgstr "Inglês"
+
+#: juddith/urls.py:22
+msgid "Administration"
+msgstr "Administração"
+
+#: website/forms.py:19
+msgid "your email"
+msgstr "seu email"
+
+#: website/forms.py:22
+msgid "your message"
+msgstr "sua mensagem"
+
+#: website/templates/website/base.html:44
+msgid "privacy policy"
+msgstr "política de privacidade"
+
+#: website/templates/website/base.html:46
+msgid "contact"
+msgstr "contato"
+
+#: website/templates/website/contact.html:13
+msgid "contact my creator"
+msgstr "contate meu criador"
+
+#: website/templates/website/contact.html:14
+msgid "if you have any question or only want drink some coffee with him"
+msgstr "se você tiver alguma dúvida ou queira apenas tomar um café com ele"
+
+#: website/templates/website/contact.html:29
+msgid "send"
+msgstr "enviar"
+
+#: website/templates/website/privacy_policy.html:9
+msgid "Privacy Policy"
+msgstr "Política de Privacidade"
+
+#: website/templates/website/privacy_policy.html:10
+msgid "Effective date: March 03, 2019"
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:11
+msgid ""
+"Talk With Juddith ('us') operates the https://juddith-bot.herokuapp.com "
+"website (the 'Service')."
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:12
+msgid ""
+"This page informs you of our policies regarding the collection, use, and "
+"disclosure of personal data when you use our Service and the choices you "
+"have associated with that data. Our Privacy Policy for Talk With Juddith is "
+"created with the help of the "
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:12
+msgid "Free Privacy Policy website"
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:13
+msgid ""
+"We use your data to provide and improve the Service. By using the Service, "
+"you agree to the collection and use of information in accordance with this "
+"policy. Unless otherwise defined in this Privacy Policy, terms used in this "
+"Privacy Policy have the same meanings as in our Terms and Conditions, "
+"accessible from https://juddith-bot.herokuapp.com"
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:15
+msgid "Information Collection And Use"
+msgstr "Pacote De Informações E Uso"
+
+#: website/templates/website/privacy_policy.html:16
+msgid ""
+"We collect several different types of information for various purposes to "
+"provide and improve our Service to you."
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:18
+msgid "Types of Data Collected"
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:20
+msgid "Personal Data"
+msgstr "Dados Pessoais"
+
+#: website/templates/website/privacy_policy.html:21
+msgid ""
+"While using our Service, we will not ask you to provide us any personally "
+"identifiable information that can be used to contact or identify you "
+"('Personal Data'). But some Personally identifiable information maybe "
+"provided by you or your browser, as:"
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:23
+msgid "Cookies and Usage Data"
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:26
+msgid "Usage Data"
+msgstr "Uso Dos Dados"
+
+#: website/templates/website/privacy_policy.html:27
+msgid ""
+"We may also collect information how the Service is accessed and used ('Usage "
+"Data'). This Usage Data may include information such as your computer's "
+"Internet Protocol address (e.g. IP address), browser type, browser version, "
+"the pages of our Service that you visit, the time and date of your visit, "
+"the time spent on those pages, unique device identifiers and other "
+"diagnostic data."
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:29
+msgid "Tracking & Cookies Data"
+msgstr "Rastreamento & Cookies De Dados"
+
+#: website/templates/website/privacy_policy.html:30
+msgid ""
+"We use cookies and similar tracking technologies to track the activity on "
+"our Service and hold certain information."
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:31
+msgid ""
+"Cookies are files with small amount of data which may include an anonymous "
+"unique identifier. Cookies are sent to your browser from a website and "
+"stored on your device. Tracking technologies also used are beacons, tags, "
+"and scripts to collect and track information and to improve and analyze our "
+"Service."
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:32
+msgid ""
+"You can instruct your browser to refuse all cookies or to indicate when a "
+"cookie is being sent. However, if you do not accept cookies, you may not be "
+"able to use some portions of our Service."
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:33
+msgid "Examples of Cookies we use:"
+msgstr "Exemplos de Cookies que utilizamos:"
+
+#: website/templates/website/privacy_policy.html:36
+msgid "Session Cookies"
+msgstr "Cookies de Sessão"
+
+#: website/templates/website/privacy_policy.html:36
+msgid "We use Session Cookies to operate our Service."
+msgstr "Nós utilizamos os Cookies de Sessão para operar nosso Serviço."
+
+#: website/templates/website/privacy_policy.html:38
+msgid "Preference Cookies"
+msgstr "Cookies de Preferências"
+
+#: website/templates/website/privacy_policy.html:38
+msgid ""
+"We use Preference Cookies to remember your preferences and various settings."
+msgstr ""
+"Nós utilizamos os Cookies de Preferência para lembrar suas preferências e "
+"várias configurações."
+
+#: website/templates/website/privacy_policy.html:40
+msgid "Security Cookies"
+msgstr "Cookies de Segurança"
+
+#: website/templates/website/privacy_policy.html:40
+msgid "We use Security Cookies for security purposes."
+msgstr ""
+"Nós utilizamos os Cookies de Segurança apenas para propósitos de segurança."
+
+#: website/templates/website/privacy_policy.html:43
+msgid "Use of Data"
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:44
+msgid "Talk With Juddith uses the collected data for various purposes:"
+msgstr "Talk With Juddith utiliza os dados coletados para vários propósitos:"
+
+#: website/templates/website/privacy_policy.html:46
+msgid "To provide and maintain the Service"
+msgstr "Para prover e dar manutenção ao Serviço"
+
+#: website/templates/website/privacy_policy.html:47
+msgid ""
+"To allow you to participate in interactive features of our Service when you "
+"choose to do so"
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:48
+msgid "To provide customer care and support"
+msgstr "Para prover ajuda e suporte aos nossos clientes"
+
+#: website/templates/website/privacy_policy.html:49
+msgid ""
+"To provide analysis or valuable information so that we can improve the "
+"Service"
+msgstr "Para prover análises ou informações com intuito de melhorar o Serviço"
+
+#: website/templates/website/privacy_policy.html:50
+msgid "To monitor the usage of the Service"
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:51
+msgid "To detect, prevent and address technical issues"
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:54
+msgid "Transfer Of Data"
+msgstr "Transferência de Dados"
+
+#: website/templates/website/privacy_policy.html:55
+msgid ""
+"Your information, including Personal Data, may be transferred to — and "
+"maintained on — computers located outside of your state, province, country "
+"or other governmental jurisdiction where the data protection laws may differ "
+"than those from your jurisdiction."
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:56
+msgid ""
+"Your consent to this Privacy Policy followed by your submission of such "
+"information represents your agreement to that transfer."
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:57
+msgid ""
+"Talk With Juddith will take all steps reasonably necessary to ensure that "
+"your data is treated securely and in accordance with this Privacy Policy and "
+"no transfer of your Personal Data will take place to an organization or a "
+"country unless there are adequate controls in place including the security "
+"of your data and other personal information."
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:59
+msgid "Disclosure Of Data"
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:61
+msgid "Legal Requirements"
+msgstr "Requerimentos Legais"
+
+#: website/templates/website/privacy_policy.html:62
+msgid ""
+"Talk With Juddith may disclose your Personal Data in the good faith belief "
+"that such action is necessary to:"
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:64
+msgid "To comply with a legal obligation"
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:65
+msgid "To protect and defend the rights or property of Talk With Juddith"
+msgstr "Para proteger e defender os direitos legais de Talk With Juddith"
+
+#: website/templates/website/privacy_policy.html:66
+msgid ""
+"To prevent or investigate possible wrongdoing in connection with the Service"
+msgstr "Para previnir ou investigar possíveis usos impróprios do Serviço"
+
+#: website/templates/website/privacy_policy.html:67
+msgid "To protect the personal safety of users of the Service or the public"
+msgstr "Para protege a segurança pessoal dos usuários do Serviço ou do público"
+
+#: website/templates/website/privacy_policy.html:68
+msgid "To protect against legal liability"
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:71
+msgid "Security Of Data"
+msgstr "Segurança Dos Dados"
+
+#: website/templates/website/privacy_policy.html:72
+msgid ""
+"The security of your data is important to us, but remember that no method of "
+"transmission over the Internet, or method of electronic storage is 100 "
+"percent secure. While we strive to use commercially acceptable means to "
+"protect your Personal Data, we cannot guarantee its absolute security."
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:74
+msgid "Service Providers"
+msgstr "Provedores de Serviço"
+
+#: website/templates/website/privacy_policy.html:75
+msgid ""
+"We may employ third party companies and individuals to facilitate our "
+"Service ('Service Providers'), to provide the Service on our behalf, to "
+"perform Service-related services or to assist us in analyzing how our "
+"Service is used."
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:76
+msgid ""
+"These third parties have access to your Personal Data only to perform these "
+"tasks on our behalf and are obligated not to disclose or use it for any "
+"other purpose."
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:78
+msgid "Links To Other Sites"
+msgstr "Links Para Outros Sites"
+
+#: website/templates/website/privacy_policy.html:79
+msgid ""
+"Our Service may contain links to other sites that are not operated by us. If "
+"you click on a third party link, you will be directed to that third party's "
+"site. We strongly advise you to review the Privacy Policy of every site you "
+"visit."
+msgstr ""
+
+#: website/templates/website/privacy_policy.html:80
+msgid ""
+"We have no control over and assume no responsibility for the content, "
+"privacy policies or practices of any third party sites or services."
+msgstr ""
+"Nós não temos controle sobre e não assumimos nenhuma responsabilidade sobre "
+"o conteúdo, políticas de privacidade ou práticas de nenhum site ou serviço "
+"terceiro."
+
+#: website/templates/website/privacy_policy.html:82
+msgid "Changes To This Privacy Policy"
+msgstr "Mudanças Nessa Política de Privacidade"
+
+#: website/templates/website/privacy_policy.html:83
+msgid ""
+"We may update our Privacy Policy from time to time. We will notify you of "
+"any changes by posting the new Privacy Policy on this page."
+msgstr ""
+"Nós poderemos atualizar nossa Política de Privacidade de tempos em tempos. "
+"Nós notificaremos você sobre qualquer alteração postando a nova Política de "
+"Privacidade nessa página."
+
+#: website/templates/website/privacy_policy.html:84
+msgid ""
+"You are advised to review this Privacy Policy periodically for any changes. "
+"Changes to this Privacy Policy are effective when they are posted on this "
+"page."
+msgstr ""
+"Você fica avisado de revisar essa Política de Privacidade periodicamente por "
+"qualquer mudança. Mudanças nessa Política de Privacidade serão efetivadas no "
+"ato de publicação delas nessa página."
+
+#: website/templates/website/privacy_policy.html:86
+msgid "Contact Us"
+msgstr "Contate-nos"
+
+#: website/templates/website/privacy_policy.html:87
+msgid "If you have any questions about this Privacy Policy, please contact us:"
+msgstr ""
+"Se você tiver alguma dúvida sobre essa Política de Privacidade, por favor "
+"fale conosco:"
+
+#: website/templates/website/privacy_policy.html:89
+msgid "By email: marciopinheiro@yahoo.com"
+msgstr "Por email: marciopinheiro@yahoo.com"
+
+#: website/templates/website/thanks_for_contact.html:13
+msgid "thanks"
+msgstr "obrigada"
+
+#: website/templates/website/thanks_for_contact.html:14
+msgid "my creator will read and anwer as sonn as possible"
+msgstr "meu criador lerá e responderá o mais breve possível"
+
+#: website/templates/website/thanks_for_contact.html:15
+msgid "let's talk more"
+msgstr "vamos falar um pouco mais"
+
+#~ msgid "Feature"
+#~ msgstr "Recurso"

@@ -1,0 +1,13 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block app_content %}
+    <div id="website">
+        {% block content %}{% endblock %}
+    </div>
+{% endblock %}
+
+{% block app_default_assets %}
+    <!-- Load app default assets -->
+    <link rel="stylesheet" href="{% static "website/css/website.css" %}">
+{% endblock %}

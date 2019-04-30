@@ -1,0 +1,28 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+setuptools = "*"
+numpy = "*"
+pandas = "*"
+joblib = "*"
+nltk = "*"
+requests = "*"
+scikit-learn = "*"
+matplotlib = "*"
+psycopg2-binary = "*"
+django = "*"
+graphene-django = "*"
+dropbox = "*"
+whitenoise = {extras = ["brotli"],version = "*"}
+gunicorn = "*"
+unidecode = "*"
+django-redis = "*"
+dj-database-url = "*"
+
+[requires]
+python_version = "3.7.3"
