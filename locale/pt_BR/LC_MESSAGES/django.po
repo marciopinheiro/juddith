@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-29 23:07-0300\n"
-"PO-Revision-Date: 2019-04-29 23:07-0300\n"
+"POT-Creation-Date: 2019-04-29 23:26-0300\n"
+"PO-Revision-Date: 2019-04-29 23:36-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -155,7 +155,7 @@ msgstr ""
 
 #: juddith/admin.py:54
 msgid "Some of the records could not be duplicated because one or more "
-msgstr ""
+msgstr "Alguns dos registros não puderam ser duplicados porque um ou mais"
 
 #: juddith/admin.py:58
 msgid "Duplicate selected registers"
@@ -207,13 +207,15 @@ msgstr "Política de Privacidade"
 
 #: website/templates/website/privacy_policy.html:10
 msgid "Effective date: March 03, 2019"
-msgstr ""
+msgstr "Efetivada em: 03 de Março, 2019"
 
 #: website/templates/website/privacy_policy.html:11
 msgid ""
 "Talk With Juddith ('us') operates the https://juddith-bot.herokuapp.com "
 "website (the 'Service')."
 msgstr ""
+"Talk With Juddith (‘nós’) opera em https://juddith-bot.herokuapp.com website "
+"(o ‘Serviço’)."
 
 #: website/templates/website/privacy_policy.html:12
 msgid ""
@@ -222,6 +224,10 @@ msgid ""
 "have associated with that data. Our Privacy Policy for Talk With Juddith is "
 "created with the help of the "
 msgstr ""
+"Esta página informa sobre nossas políticas relativas à coleta, uso e "
+"divulgação de dados pessoais quando você usa nosso Serviço e as opções que "
+"você associou a esses dados. Nossa Política de Privacidade para Talk With "
+"Juddith é criada com a ajuda do"
 
 #: website/templates/website/privacy_policy.html:12
 msgid "Free Privacy Policy website"
@@ -235,6 +241,11 @@ msgid ""
 "Privacy Policy have the same meanings as in our Terms and Conditions, "
 "accessible from https://juddith-bot.herokuapp.com"
 msgstr ""
+"Usamos seus dados para fornecer e melhorar o serviço. Ao usar o Serviço, "
+"você concorda com a coleta e uso de informações de acordo com esta política. "
+"A menos que definido de outra forma nesta Política de Privacidade, os termos "
+"usados nesta Política de Privacidade têm os mesmos significados que os "
+"nossos Termos e Condições, acessíveis em https://juddith-bot.herokuapp.com"
 
 #: website/templates/website/privacy_policy.html:15
 msgid "Information Collection And Use"
@@ -245,10 +256,12 @@ msgid ""
 "We collect several different types of information for various purposes to "
 "provide and improve our Service to you."
 msgstr ""
+"Coletamos vários tipos diferentes de informações para diversos fins, para "
+"fornecer e melhorar nosso Serviço para você."
 
 #: website/templates/website/privacy_policy.html:18
-msgid "Types of Data Collected"
-msgstr ""
+msgid "Types Of Data Collected"
+msgstr "Tipos De Dados Coletados"
 
 #: website/templates/website/privacy_policy.html:20
 msgid "Personal Data"
@@ -261,14 +274,18 @@ msgid ""
 "('Personal Data'). But some Personally identifiable information maybe "
 "provided by you or your browser, as:"
 msgstr ""
+"Ao usar nosso Serviço, não lhe pediremos para nos fornecer qualquer "
+"informação pessoal identificável que possa ser usada para contatá-lo ou "
+"identificá-lo (‘Dados Pessoais’). Mas algumas informações de identificação "
+"pessoal podem ser fornecidas por você ou por seu navegador, como:"
 
 #: website/templates/website/privacy_policy.html:23
-msgid "Cookies and Usage Data"
-msgstr ""
+msgid "Cookies And Usage Data"
+msgstr "Cookies E Utilização Dos Dados"
 
 #: website/templates/website/privacy_policy.html:26
 msgid "Usage Data"
-msgstr "Uso Dos Dados"
+msgstr "Utilização Dos Dados"
 
 #: website/templates/website/privacy_policy.html:27
 msgid ""
@@ -279,6 +296,12 @@ msgid ""
 "the time spent on those pages, unique device identifiers and other "
 "diagnostic data."
 msgstr ""
+"Também podemos coletar informações sobre como o Serviço é acessado e usado "
+"(‘Dados de Uso’). Estes Dados de Uso podem incluir informações como o "
+"endereço IP do seu computador (por exemplo, endereço IP), tipo de navegador, "
+"versão do navegador, as páginas do nosso Serviço que você visita, a hora e "
+"data de sua visita, o tempo gasto nessas páginas identificadores de "
+"dispositivos e outros dados de diagnóstico."
 
 #: website/templates/website/privacy_policy.html:29
 msgid "Tracking & Cookies Data"
@@ -289,6 +312,8 @@ msgid ""
 "We use cookies and similar tracking technologies to track the activity on "
 "our Service and hold certain information."
 msgstr ""
+"Usamos cookies e tecnologias de rastreamento semelhantes para rastrear a "
+"atividade em nosso Serviço e manter certas informações."
 
 #: website/templates/website/privacy_policy.html:31
 msgid ""
@@ -298,6 +323,11 @@ msgid ""
 "and scripts to collect and track information and to improve and analyze our "
 "Service."
 msgstr ""
+"Cookies são arquivos com pequena quantidade de dados que podem incluir um "
+"identificador exclusivo anônimo. Os cookies são enviados para o seu "
+"navegador a partir de um site e armazenados no seu dispositivo. As "
+"tecnologias de rastreamento também usadas são beacons, tags e scripts para "
+"coletar e rastrear informações e para melhorar e analisar nosso Serviço."
 
 #: website/templates/website/privacy_policy.html:32
 msgid ""
@@ -305,6 +335,9 @@ msgid ""
 "cookie is being sent. However, if you do not accept cookies, you may not be "
 "able to use some portions of our Service."
 msgstr ""
+"Você pode instruir seu navegador para recusar todos os cookies ou para "
+"indicar quando um cookie está sendo enviado. No entanto, se você não aceitar "
+"cookies, talvez não consiga usar algumas partes de nosso Serviço."
 
 #: website/templates/website/privacy_policy.html:33
 msgid "Examples of Cookies we use:"
@@ -339,8 +372,9 @@ msgstr ""
 "Nós utilizamos os Cookies de Segurança apenas para propósitos de segurança."
 
 #: website/templates/website/privacy_policy.html:43
-msgid "Use of Data"
-msgstr ""
+#, fuzzy
+msgid "Use Of Data"
+msgstr "Uso Dos Dados"
 
 #: website/templates/website/privacy_policy.html:44
 msgid "Talk With Juddith uses the collected data for various purposes:"
@@ -355,6 +389,8 @@ msgid ""
 "To allow you to participate in interactive features of our Service when you "
 "choose to do so"
 msgstr ""
+"Para permitir que você participe de recursos interativos do nosso Serviço ao "
+"optar por fazê-lo"
 
 #: website/templates/website/privacy_policy.html:48
 msgid "To provide customer care and support"
@@ -368,15 +404,15 @@ msgstr "Para prover análises ou informações com intuito de melhorar o Serviç
 
 #: website/templates/website/privacy_policy.html:50
 msgid "To monitor the usage of the Service"
-msgstr ""
+msgstr "Para monitorar o uso do Serviço"
 
 #: website/templates/website/privacy_policy.html:51
 msgid "To detect, prevent and address technical issues"
-msgstr ""
+msgstr "Para detectar, previnir e endereçar problemas técnicos"
 
 #: website/templates/website/privacy_policy.html:54
 msgid "Transfer Of Data"
-msgstr "Transferência de Dados"
+msgstr "Transferência De Dados"
 
 #: website/templates/website/privacy_policy.html:55
 msgid ""
@@ -385,12 +421,19 @@ msgid ""
 "or other governmental jurisdiction where the data protection laws may differ "
 "than those from your jurisdiction."
 msgstr ""
+"Suas informações, incluindo Dados Pessoais, podem ser transferidas para - e "
+"mantidas em - computadores localizados fora do seu estado, província, país "
+"ou outra jurisdição governamental, onde as leis de proteção de dados podem "
+"ser diferentes das da sua jurisdição."
 
 #: website/templates/website/privacy_policy.html:56
 msgid ""
 "Your consent to this Privacy Policy followed by your submission of such "
 "information represents your agreement to that transfer."
 msgstr ""
+"O seu consentimento para com esta Política de Privacidade, seguido pelo "
+"envio de tais informações, representa sua concordância com essa "
+"transferência."
 
 #: website/templates/website/privacy_policy.html:57
 msgid ""
@@ -400,10 +443,15 @@ msgid ""
 "country unless there are adequate controls in place including the security "
 "of your data and other personal information."
 msgstr ""
+"Talk With Juddith tomará todas as medidas razoavelmente necessárias para "
+"garantir que seus dados sejam tratados com segurança e de acordo com esta "
+"Política de Privacidade e nenhuma transferência de seus Dados Pessoais "
+"ocorrerá para uma organização ou país, a menos que haja controles adequados "
+"em vigor, incluindo a segurança dos seus dados e outras informações pessoais."
 
 #: website/templates/website/privacy_policy.html:59
 msgid "Disclosure Of Data"
-msgstr ""
+msgstr "Divulgação De Dados"
 
 #: website/templates/website/privacy_policy.html:61
 msgid "Legal Requirements"
@@ -414,10 +462,12 @@ msgid ""
 "Talk With Juddith may disclose your Personal Data in the good faith belief "
 "that such action is necessary to:"
 msgstr ""
+"Talk With Juddith pode divulgar seus dados pessoais na crença de boa fé que "
+"tal ação é necessária para:"
 
 #: website/templates/website/privacy_policy.html:64
 msgid "To comply with a legal obligation"
-msgstr ""
+msgstr "Para cumprir uma obrigação legal"
 
 #: website/templates/website/privacy_policy.html:65
 msgid "To protect and defend the rights or property of Talk With Juddith"
@@ -434,7 +484,7 @@ msgstr "Para protege a segurança pessoal dos usuários do Serviço ou do públi
 
 #: website/templates/website/privacy_policy.html:68
 msgid "To protect against legal liability"
-msgstr ""
+msgstr "Para proteger contra responsabilidade legal"
 
 #: website/templates/website/privacy_policy.html:71
 msgid "Security Of Data"
@@ -447,10 +497,15 @@ msgid ""
 "percent secure. While we strive to use commercially acceptable means to "
 "protect your Personal Data, we cannot guarantee its absolute security."
 msgstr ""
+"A segurança dos seus dados é importante para nós, mas lembre-se de que "
+"nenhum método de transmissão pela Internet ou método de armazenamento "
+"eletrônico é 100% seguro. Embora nos esforcemos para usar meios "
+"comercialmente aceitáveis para proteger seus dados pessoais, não podemos "
+"garantir sua segurança absoluta."
 
 #: website/templates/website/privacy_policy.html:74
 msgid "Service Providers"
-msgstr "Provedores de Serviço"
+msgstr "Provedores De Serviço"
 
 #: website/templates/website/privacy_policy.html:75
 msgid ""
@@ -459,6 +514,10 @@ msgid ""
 "perform Service-related services or to assist us in analyzing how our "
 "Service is used."
 msgstr ""
+"Podemos empregar empresas e indivíduos terceirizados para facilitar nosso "
+"Serviço (“Prestadores de Serviço”), para fornecer o Serviço em nosso nome, "
+"para executar serviços relacionados a nosso Serviço ou para nos auxiliar na "
+"análise de como nosso Serviço é utilizado."
 
 #: website/templates/website/privacy_policy.html:76
 msgid ""
@@ -466,6 +525,9 @@ msgid ""
 "tasks on our behalf and are obligated not to disclose or use it for any "
 "other purpose."
 msgstr ""
+"Esses terceiros têm acesso aos seus Dados Pessoais apenas para realizar "
+"essas tarefas em nosso nome e são obrigados a não divulgá-los ou usá-los "
+"para qualquer outra finalidade."
 
 #: website/templates/website/privacy_policy.html:78
 msgid "Links To Other Sites"
@@ -478,6 +540,10 @@ msgid ""
 "site. We strongly advise you to review the Privacy Policy of every site you "
 "visit."
 msgstr ""
+"Nosso Serviço pode conter links para outros sites que não são operados por "
+"nós. Se você clicar em um link de terceiros, você será direcionado para o "
+"site de terceiros. Recomendamos vivamente que reveja a política de "
+"privacidade de todos os sites que visita."
 
 #: website/templates/website/privacy_policy.html:80
 msgid ""

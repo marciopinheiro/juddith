@@ -10,7 +10,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 from . import integrations
 
-app_name = 'application'
+app_name = 'webhooks'
 
 urlpatterns = [
     path('telegram/' + settings.TELEGRAM_TOKEN + '/chat',
