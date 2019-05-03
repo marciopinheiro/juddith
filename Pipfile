@@ -23,6 +23,7 @@ gunicorn = "*"
 unidecode = "*"
 django-redis = "*"
 dj-database-url = "*"
+django-pagseguro2 = "*"
 
 [requires]
 python_version = "3.7.3"

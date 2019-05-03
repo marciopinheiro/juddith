@@ -14,6 +14,10 @@ def index(request):
     return redirect('application:chat')
 
 
+def terms_of_use(request):
+    return render(request, 'website/terms_of_use.html')
+
+
 def privacy_policy(request):
     return render(request, 'website/privacy_policy.html')
 

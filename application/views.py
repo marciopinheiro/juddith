@@ -5,15 +5,7 @@
 #  rights-holder(s).
 
 from django.shortcuts import render
-from application.services import Trainer
 
 
 def chat(request):
     return render(request, 'application/chat.html')
-
-
-def train(request):
-    trainer = Trainer()
-    trainer.fit()
-    trainer.persist()
-    return render(request, 'application/trained.html')

@@ -11,6 +11,7 @@ from . import views
 app_name = 'website'
 urlpatterns = [
     path('', views.index, name='index'),
+    path('terms/terms-of-use', views.terms_of_use, name='terms_of_use'),
     path('terms/privacy-policy', views.privacy_policy, name='privacy_policy'),
     path('contact', views.contact, name='contact'),
     path('contact/thanks', views.thanks_for_contact, name='thanks_for_contact'),

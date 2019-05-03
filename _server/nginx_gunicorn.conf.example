@@ -1,6 +1,6 @@
-upstream convenio_app_server {
-    server unix:///tmp/convenio.sock fail_timeout=0;
-    # server unix:///tmp/convenio.sock; # use Unix socket
+upstream juddith_app_server {
+    server unix:///tmp/juddith.sock fail_timeout=0;
+    # server unix:///tmp/juddith.sock; # use Unix socket
     # server 127.0.0.1:8000;
 }
 
@@ -8,17 +8,17 @@ server {
 	listen 80;
 	listen [::]:80;
 
-	root /var/www/python/django/convenio;
-	server_name django.convenio.local;
+	root /var/www/html/juddith;
+	server_name juddith.myserver.com.br;
     charset     utf-8;
     client_max_body_size 4G;
 
     location /media  {
-        alias /var/www/python/django/convenio/_media;
+        alias /var/www/html/juddith/_media;
     }
 
     location /static {
-        alias /var/www/python/django/convenio/_static;
+        alias /var/www/html/juddith/_static;
     }
 
 	location / {
@@ -35,21 +35,21 @@ server {
         proxy_redirect off;
 
         if (!-f $request_filename) {
-            proxy_pass http://convenio_app_server;
+            proxy_pass http://juddith_app_server;
             break;
         }
 
-        # uwsgi_pass  convenio;
+        # uwsgi_pass  juddith;
         # include /etc/nginx/uwsgi_params;
-        # include     /var/www/python/django/convenio/convenio/uwsgi_params;
+        # include     /var/www/html/juddith/juddith/uwsgi_params;
     }
 
-    access_log /var/www/python/django/convenio/logs/nginx-access.log;
-    error_log /var/www/python/django/convenio/logs/nginx-error.log;
+    access_log /var/www/html/juddith/logs/nginx-access.log;
+    error_log /var/www/html/juddith/logs/nginx-error.log;
 
     # Error pages
     error_page 500 502 503 504 /500.html;
     location = /500.html {
-        root /var/www/python/django/convenio/_static;
+        root /var/www/html/juddith/_static;
     }
 }
