@@ -11,8 +11,8 @@ class CacheManager:
     """
     Cache Manager of bot.
     """
-    @staticmethod
-    def set_cache(key, data, force=False):
+    @classmethod
+    def set_cache(cls, key, data, force=False):
         """
         Set bot cache.
         :param key:
@@ -20,7 +20,7 @@ class CacheManager:
         :param force:
         :return:
         """
-        cache_data = CacheManager.get_cache(key)
+        cache_data = cls.get_cache(key)
 
         if not cache_data or force:
             cache.set(key, data, timeout=86400)
@@ -29,8 +29,8 @@ class CacheManager:
 
         return None
 
-    @staticmethod
-    def get_cache(key):
+    @classmethod
+    def get_cache(cls, key):
         """
         Get bot cache.
         :param key:
@@ -38,8 +38,8 @@ class CacheManager:
         """
         return cache.get(key)
 
-    @staticmethod
-    def update_cache(key, data_key, new_data, append=False):
+    @classmethod
+    def update_cache(cls, key, data_key, new_data, append=False):
         """
         Update bot cache.
         :param key:
@@ -48,7 +48,7 @@ class CacheManager:
         :param append:
         :return:
         """
-        cache_data = CacheManager.get_cache(key)
+        cache_data = cls.get_cache(key)
 
         if cache_data:
 
@@ -58,6 +58,36 @@ class CacheManager:
             else:
                 cache_data[data_key] = new_data
 
-            return CacheManager.set_cache(key, cache_data, True)
+            return cls.set_cache(key, cache_data, True)
 
         return None
+
+    @classmethod
+    def reset_process(cls, key):
+        """
+        Reset active feature chat cache.
+        :param key:
+        :return:
+        """
+        cls.update_cache(key, 'process', {
+            'feature': None,
+            'step': None
+        })
+
+    @classmethod
+    def reset(cls, key):
+        """
+        Reset chat cache.
+        :param key:
+        :return:
+        """
+        cls.set_cache(key, {
+            'person': {
+                'name': None
+            },
+            'messages': [],
+            'process': {
+                'feature': None,
+                'step': None
+            }
+        })

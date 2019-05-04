@@ -45,16 +45,7 @@ class Interpreter:
     def __init__(self, chat_id):
         self._chat_id = str(chat_id)
         self._logger.info('Chat ID: ' + self._chat_id)
-        CacheManager.set_cache(self._chat_id, {
-            'person': {
-                'name': None
-            },
-            'messages': [],
-            'process': {
-                'feature': None,
-                'step': None
-            }
-        })
+        CacheManager.reset(self._chat_id)
 
     def translate(self, elocution_text):
         """
