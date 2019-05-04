@@ -102,6 +102,9 @@ docker/data
 # mypy
 .mypy_cache/
 
+# Migrations
+*/migrations/*
+!*/migrations/__init__.py
 
 # IDE
 .idea

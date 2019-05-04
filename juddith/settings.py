@@ -29,9 +29,8 @@ SECRET_KEY = os.environ['SECRET_KEY']
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ['DEBUG']
-ALLOWED_HOSTS = [os.environ['ALLOWED_HOSTS']]
-INTERNAL_IPS = ['127.0.0.1']
+DEBUG = False
+ALLOWED_HOSTS = ['juddith.ocasys.com.br', 'juddith-bot.herokuapp.com']
 
 
 # Application definition
