@@ -4,48 +4,15 @@
 #  your use. For other uses you need to obtain permission from the
 #  rights-holder(s).
 
-import re
 import datetime
+import re
 import requests
 
 from django.conf import settings
 from django.utils.translation import gettext as _
-from .models import Intent, Response
+from application.models import Intent
 
-
-class JFBaseResponseFeature(object):
-    """
-    Parent class of Functional Classes
-    """
-    intent = None
-    response_elocution = None
-
-    def __init__(self, intent):
-        """
-        Init class with interaction elocution text and the response object.
-        :param intent:
-        """
-        self.intent = intent
-        self.response_elocution = intent.response.get_response_elocution()
-
-    def process(self, data=None, pattern=None):
-        """
-        Replace the response string pattern with the given data
-        :param data:
-        :param pattern:
-        :return:
-        """
-        if data and pattern:
-            if type(data) == str:
-                data = [data]
-                pattern = [pattern]
-            response_message = self.response_elocution
-            for idx, item in enumerate(data):
-                response_message = re.sub(rf"{pattern[idx]}",
-                                          str(data[idx]).lower(),
-                                          str(response_message),
-                                          flags=re.IGNORECASE)
-        return response_message
+from .jfbaseresponsefeature import JFBaseResponseFeature
 
 
 class JFWhatChatBotFeatures(JFBaseResponseFeature):
@@ -53,7 +20,7 @@ class JFWhatChatBotFeatures(JFBaseResponseFeature):
     Get what chat bot response's features.
     """
 
-    def handle(self):
+    def handle(self, elocution_text):
         """
         Handle the response message.
         :return:
@@ -79,7 +46,7 @@ class JFWhatDateTimeNow(JFBaseResponseFeature):
     Get the date and time values.
     """
 
-    def handle(self):
+    def handle(self, elocution_text):
         """
         Handle the response message.
         :return:
@@ -126,7 +93,7 @@ class JFWhatWeatherNow(JFBaseResponseFeature):
     Reference: http://api.openweathermap.org
     """
 
-    def handle(self):
+    def handle(self, elocution_text):
         """
         Handle the response message
         :return:

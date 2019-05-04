@@ -5,7 +5,10 @@
 #  rights-holder(s).
 
 import os
+import logging
 import datetime
+import time
+import contextlib
 import unidecode
 import pandas as pd
 import numpy as np
@@ -14,9 +17,9 @@ import joblib
 import dropbox
 
 from django.conf import settings
+from django.core.exceptions import ObjectDoesNotExist
 
-from .services import *
-from .models import Elocution
+from application.models import Elocution
 
 
 @contextlib.contextmanager

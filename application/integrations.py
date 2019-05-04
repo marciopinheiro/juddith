@@ -11,7 +11,7 @@ import logging
 from django.conf import settings
 from django.http import JsonResponse
 
-from .services import Interpreter
+from application.services import Interpreter
 
 
 def telegram(request):

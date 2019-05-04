@@ -9,12 +9,12 @@ import logging
 import contextlib
 import time
 
-from django.core.cache import cache
 from django.core.exceptions import ObjectDoesNotExist
 
-from .models import Intent
+from application.models import Intent
 from .ml_services import Predictor
-from . import features
+from .cache_manager import CacheManager
+from application import features
 
 
 @contextlib.contextmanager
@@ -31,62 +31,6 @@ def watch_time(message, logger):
     finally:
         t1 = time.time()
         logger.info(f'Total elapsed time for {message}: {(t1 - t0):.2f}')
-
-
-class CacheManager:
-    """
-    Cache Manager of bot.
-    """
-    @staticmethod
-    def set_cache(key, data, force=False):
-        """
-        Set bot cache.
-        :param key:
-        :param data:
-        :param force:
-        :return:
-        """
-        cache_data = CacheManager.get_cache(key)
-
-        if not cache_data or force:
-            cache.set(key, data, timeout=86400)
-
-            return data
-
-        return None
-
-    @staticmethod
-    def get_cache(key):
-        """
-        Get bot cache.
-        :param key:
-        :return:
-        """
-        return cache.get(key)
-
-    @staticmethod
-    def update_cache(key, data_key, new_data, append=False):
-        """
-        Update bot cache.
-        :param key:
-        :param data_key:
-        :param new_data:
-        :param append:
-        :return:
-        """
-        cache_data = CacheManager.get_cache(key)
-
-        if cache_data:
-
-            if append:
-                cache_data[data_key] = cache_data[data_key] + new_data
-
-            else:
-                cache_data[data_key] = new_data
-
-            return CacheManager.set_cache(key, cache_data, True)
-
-        return None
 
 
 class Interpreter:
@@ -126,7 +70,9 @@ class Interpreter:
             active_feature_class = active_process.get('feature')
 
             if active_feature_class is not None:
-                feature = active_feature_class()
+                active_feature_class = getattr(features, active_feature_class)
+                feature = active_feature_class(self._chat_id, None)
+
                 return feature.handle(elocution_text)
 
             else:
@@ -154,7 +100,7 @@ class Interpreter:
         if feature is not None:
 
             try:
-                return feature.handle()
+                return feature.handle(elocution_text)
 
             except AttributeError:
                 self._logger.error(
@@ -184,7 +130,7 @@ class Interpreter:
             try:
                 feature_class = getattr(features,
                                         intent.feature.call)
-                return feature_class(intent)
+                return feature_class(self._chat_id, intent)
 
             except AttributeError:
                 self._logger.error(
@@ -202,13 +148,3 @@ class Interpreter:
         cache_data = CacheManager.get_cache(self._chat_id)
 
         return cache_data['process']
-
-    def pre_process_entry(self, entry):
-        self.get_entities(entry)
-
-    def get_entities(self, elocution_text):
-        from .er import EntityRecon
-
-        entity_recon = EntityRecon()
-        self._entities = entity_recon.recognize(elocution_text)
-        print(self._entities)

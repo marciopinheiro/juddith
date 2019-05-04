@@ -5,8 +5,12 @@
 #  rights-holder(s).
 
 import json
+import re
+import datetime
+import requests
 
-from .addons import *
+from django.conf import settings
+from .jfbaseresponsefeature import JFBaseResponseFeature
 
 
 class JFWhoInHomeOffice(JFBaseResponseFeature):
@@ -15,7 +19,7 @@ class JFWhoInHomeOffice(JFBaseResponseFeature):
     """
     date = None
 
-    def handle(self):
+    def handle(self, elocution_text):
         """
         Handle the response message
         :return:
@@ -78,4 +82,3 @@ class JFWhoInHomeOffice(JFBaseResponseFeature):
                 return self.intent.feature.error_message
 
         return self.intent.feature.error_message
-
