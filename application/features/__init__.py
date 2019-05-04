@@ -6,4 +6,3 @@
 
 from .addons import *
 from .jfwhoinhomeoffice import JFWhoInHomeOffice
-from .jfpharmasale import JFPharmaSale
