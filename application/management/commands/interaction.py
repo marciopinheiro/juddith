@@ -25,7 +25,7 @@ class Command(BaseCommand):
                     break
 
                 interpreter = Interpreter()
-                response = interpreter.translate(elocution_text)
+                response = interpreter.get_response(elocution_text)
 
                 if len(response) > 0:
                     response += ' '

@@ -37,7 +37,7 @@ def telegram(request):
 
             if not bot and message_text is not None:
                 interpreter = Interpreter(chat_id)
-                response_text = interpreter.translate(message_text)
+                response_text = interpreter.get_response(message_text)
                 requests.post(send_url, data={'chat_id': chat_id,
                                               'text': response_text})
 

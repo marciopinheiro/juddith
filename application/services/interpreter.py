@@ -42,14 +42,16 @@ class Interpreter:
     _entities = None
     _chat_id = None
 
-    def __init__(self, chat_id):
-        self._chat_id = str(chat_id)
-        self._logger.info('Chat ID: ' + self._chat_id)
-        CacheManager.reset(self._chat_id)
+    def __init__(self, chat_id=None):
 
-    def translate(self, elocution_text):
+        if chat_id:
+            self._chat_id = str(chat_id)
+            self._logger.info('Chat ID: ' + self._chat_id)
+            CacheManager.reset(self._chat_id)
+
+    def get_response(self, elocution_text):
         """
-        Handle interaction of chat.
+        Get response of chat interaction.
         :param elocution_text:
         :return:
         """
@@ -67,11 +69,11 @@ class Interpreter:
                 return feature.handle(elocution_text)
 
             else:
-                return self.get_ml_response(elocution_text)
+                return self.get_ml_prediction(elocution_text)
 
-    def get_ml_response(self, elocution_text):
+    def get_ml_prediction(self, elocution_text):
         """
-        Get response by Machine Learning process.
+        Get prediction of Machine Learning process.
         :param elocution_text:
         :return:
         """

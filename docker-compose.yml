@@ -4,10 +4,14 @@ services:
 
   postgres:
     container_name: juddith_postgres
-    image: postgres:9.4
+    image: postgres:11
     ports:
       - 5432:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=postgres
     volumes:
+      - ./docker/config/postgres/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
       - ./docker/data/postgres:/var/lib/postgresql/data
     networks:
       - backend

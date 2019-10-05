@@ -16,7 +16,7 @@ class Chat(graphene.ObjectType):
     @staticmethod
     def resolve_message(self, info, **kwargs):
         interpreter = Interpreter(kwargs['chat'])
-        response = interpreter.translate(kwargs['text'])
+        response = interpreter.get_response(kwargs['text'])
 
         return response
 

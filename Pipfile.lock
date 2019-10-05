@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "2294a11c88fdcb6509e394355832c88e38a141a33b8cddc6f4dd30b22f240fa1"
+            "sha256": "f313b60362c62426416f4125d8abaa22ce3c7c655adf6ca7bda6892a913969d3"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -87,19 +87,11 @@
         },
         "django": {
             "hashes": [
-                "sha256:148a4a2d1a85b23883b0a4e99ab7718f518a83675e4485e44dc0c1d36988c5fa",
-                "sha256:deb70aa038e59b58593673b15e9a711d1e5ccd941b5973b30750d5d026abfd56"
+                "sha256:4025317ca01f75fc79250ff7262a06d8ba97cd4f82e93394b2a0a6a4a925caeb",
+                "sha256:a8ca1033acac9f33995eb2209a6bf18a4681c3e5269a878e9a7e0b7384ed1ca3"
             ],
             "index": "pypi",
-            "version": "==2.2.5"
-        },
-        "django-pagseguro2": {
-            "hashes": [
-                "sha256:3bfcff0debb15354659823ec290647beba3a2a4143d738c63cbe89bb0d33139b",
-                "sha256:65604dd7bb0cbe7454076c6c4a4d7b627012683d8c97757995079630d18efb3b"
-            ],
-            "index": "pypi",
-            "version": "==2.0.4"
+            "version": "==2.2.6"
         },
         "django-redis": {
             "hashes": [
@@ -127,11 +119,11 @@
         },
         "graphene-django": {
             "hashes": [
-                "sha256:25f2bdf41e30bc7b860c1c13bfb4ba5c3961712394f16e847d79a69fc25a06b1",
-                "sha256:d75b3e468d8d765d5964bc809e403b44bf7c37556c0464230a5083bccf14581b"
+                "sha256:0d1404ab1ba7873a8e848d87d138f615391d100ed0c046482c164429cfb992ef",
+                "sha256:fa9e815f63e3c972773adc96c3f3c81e537dba0edcd0f1be92c799bc0b6ed0a8"
             ],
             "index": "pypi",
-            "version": "==2.5.0"
+            "version": "==2.6.0"
         },
         "graphql-core": {
             "hashes": [
@@ -165,11 +157,11 @@
         },
         "joblib": {
             "hashes": [
-                "sha256:21e0c34a69ad7fde4f2b1f3402290e9ec46f545f15f1541c582edfe05d87b63a",
-                "sha256:315d6b19643ec4afd4c41c671f9f2d65ea9d787da093487a81ead7b0bac94524"
+                "sha256:006108c7576b3eb6c5b27761ddbf188eb6e6347696325ab2027ea1ee9a4b922d",
+                "sha256:6fcc57aacb4e89451fd449e9412687c51817c3f48662c3d8f38ba3f8a0a193ff"
             ],
             "index": "pypi",
-            "version": "==0.13.2"
+            "version": "==0.14.0"
         },
         "kiwisolver": {
             "hashes": [
@@ -427,28 +419,21 @@
         },
         "urllib3": {
             "hashes": [
-                "sha256:2f3eadfea5d92bc7899e75b5968410b749a054b492d5a6379c1344a1481bc2cb",
-                "sha256:9c6c593cb28f52075016307fc26b0a0f8e82bc7d1ff19aaaa959b91710a56c47"
+                "sha256:3de946ffbed6e6746608990594d08faac602528ac7015ac28d33cee6a45b7398",
+                "sha256:9a107b99a5393caf59c7aa3c1249c16e6879447533d0887f4336dde834c7be86"
             ],
-            "version": "==1.25.5"
+            "version": "==1.25.6"
         },
         "whitenoise": {
             "extras": [
                 "brotli"
             ],
             "hashes": [
-                "sha256:59d880d25d0e90bcc6554fe0504a11195bd2e59b3d690b6fb42a8040d4e67ef5",
-                "sha256:c9b7c47fdc1dba4d37bf2787a01a844dc7a521e174fcd22a2d429e0be65e1782"
+                "sha256:22f79cf8f1f509639330f93886acaece8ec5ac5e9600c3b981d33c34e8a42dfd",
+                "sha256:6dfea214b7c12efd689007abf9afa87a426586e9dbc051873ad2c8e535e2a1ac"
             ],
             "index": "pypi",
-            "version": "==4.1.3"
-        },
-        "xmltodict": {
-            "hashes": [
-                "sha256:50d8c638ed7ecb88d90561beedbf720c9b4e851a9fa6c47ebd64e99d166d8a21",
-                "sha256:8bbcb45cc982f48b2ca8fe7e7827c5d792f217ecf1792626f808bf41c3b86051"
-            ],
-            "version": "==0.12.0"
+            "version": "==4.1.4"
         }
     },
     "develop": {}
